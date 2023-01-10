@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
-import com.squareup.picasso.Picasso;
+
 
 import java.util.ArrayList;
 
@@ -61,10 +61,6 @@ public class SliderAdapter extends PagerAdapter {
         // setting data to our views.
         SliderModal modal = sliderModalArrayList.get(position);
         titleTV.setText(modal.getTitle());
-
-        // below line is to set background
-        // drawable to our each item
-        sliderRL.setBackground(context.getResources().getDrawable(modal.getBackgroundDrawable()));
 
         // after setting the data to our views we
         // are adding the view to our container.

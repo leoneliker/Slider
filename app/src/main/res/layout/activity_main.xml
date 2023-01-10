@@ -3,9 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="500px"
     android:orientation="vertical"
     android:weightSum="5"
+    android:layout_marginTop="500px"
     tools:context=".MainActivity">
 
     <!--view pager for displaying our slides-->

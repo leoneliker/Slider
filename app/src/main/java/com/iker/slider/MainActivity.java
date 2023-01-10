@@ -34,9 +34,10 @@ public class MainActivity extends AppCompatActivity {
         sliderModalArrayList = new ArrayList<>();
 
         // on below 3 lines we are adding data to our array list.
-        sliderModalArrayList.add(new SliderModal("Slide 1 ", R.drawable.gradient_one));
-        sliderModalArrayList.add(new SliderModal("Slide 2 ",  R.drawable.gradient_two));
-        sliderModalArrayList.add(new SliderModal("Slide 3 ",  R.drawable.gradient_three));
+        sliderModalArrayList.add(new SliderModal("Slide 1 "));
+        sliderModalArrayList.add(new SliderModal("Slide 2 "));
+        sliderModalArrayList.add(new SliderModal("Slide 3 "));
+        sliderModalArrayList.add(new SliderModal("Slide 4 "));
 
         // below line is use to add our array list to adapter class.
         adapter = new SliderAdapter(MainActivity.this, sliderModalArrayList);
