@@ -55,16 +55,12 @@ public class SliderAdapter extends PagerAdapter {
         View view = layoutInflater.inflate(R.layout.slider_layout, container, false);
 
         // initializing our views.
-        ImageView imageView = view.findViewById(R.id.idIV);
         TextView titleTV = view.findViewById(R.id.idTVtitle);
-        TextView headingTV = view.findViewById(R.id.idTVheading);
         RelativeLayout sliderRL = view.findViewById(R.id.idRLSlider);
 
         // setting data to our views.
         SliderModal modal = sliderModalArrayList.get(position);
         titleTV.setText(modal.getTitle());
-        headingTV.setText(modal.getHeading());
-        Picasso.get().load(modal.getImgUrl()).into(imageView);
 
         // below line is to set background
         // drawable to our each item

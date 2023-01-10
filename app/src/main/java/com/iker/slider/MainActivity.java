@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
         sliderModalArrayList = new ArrayList<>();
 
         // on below 3 lines we are adding data to our array list.
-        sliderModalArrayList.add(new SliderModal("Slide 1 ", "Slide 1 heading", "https://images.unsplash.com/photo-1610842546881-b282c580b51d?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", R.drawable.gradient_one));
-        sliderModalArrayList.add(new SliderModal("Slide 2 ", "Slide 2 heading", "https://images.unsplash.com/photo-1610783131813-475d08664ef6?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", R.drawable.gradient_two));
-        sliderModalArrayList.add(new SliderModal("Slide 3 ", "Slide 3 heading", "https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", R.drawable.gradient_three));
+        sliderModalArrayList.add(new SliderModal("Slide 1 ", R.drawable.gradient_one));
+        sliderModalArrayList.add(new SliderModal("Slide 2 ",  R.drawable.gradient_two));
+        sliderModalArrayList.add(new SliderModal("Slide 3 ",  R.drawable.gradient_three));
 
         // below line is use to add our array list to adapter class.
         adapter = new SliderAdapter(MainActivity.this, sliderModalArrayList);

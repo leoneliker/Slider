@@ -5,8 +5,6 @@ public class SliderModal {
     // string variable for storing
     // title, image url and description.
     private String title;
-    private String heading;
-    private String imgUrl;
     private int backgroundDrawable;
 
     public SliderModal() {
@@ -23,28 +21,11 @@ public class SliderModal {
         this.title = title;
     }
 
-    public String getHeading() {
-        return heading;
-    }
 
-    // creating setter methods
-    public void setHeading(String heading) {
-        this.heading = heading;
-    }
-
-    public String getImgUrl() {
-        return imgUrl;
-    }
-
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
-    }
 
     // constructor for our modal class
-    public SliderModal(String title, String heading, String imgUrl, int backgroundDrawable) {
+    public SliderModal(String title, int backgroundDrawable) {
         this.title = title;
-        this.heading = heading;
-        this.imgUrl = imgUrl;
         this.backgroundDrawable = backgroundDrawable;
     }
 
